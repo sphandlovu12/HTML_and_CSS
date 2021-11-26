@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset = utf-8>
+<head><title>Animate me
+</title></head>
+
+<body>
+<div align="center"id="screen"></div>
+
+<style>
+body{
+    background:#d1d1d1;
+}
+#screen{
+    font-size:20px;
+    text-shadow:5px 5px 6px
+    #9d9d9d, -5px -5px 6px
+    #e0e0e0;
+    padding-top:100px;
+}
+
+</style>
+
+<script>
+var screen = document.
+getElementByld("screen");
+var i = 0;
+
+var frames = ["12 o clock","1o clock","2 o clock","3 o clock","4 o clock","  clock","6 o clock","7 o clock","8 o clock","9 o clock","10 o clock","11 o clock"];
+var speed = 1000;
+function loop(){
+    i++;
+    if(i >= frames.length){i = 0}
+    screen.innerHTML = frames[i];
+}
+setInterval(loop,speed)
+</script>
+</body>
+</html>
